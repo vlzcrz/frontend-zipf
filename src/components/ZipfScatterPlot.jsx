@@ -8,7 +8,7 @@ const ZipfScatterPlot = ({ xAxis, yAxis, vKeys, file_name }) => {
       y: yAxis,
       type: "scatter",
       mode: "lines+markers",
-      marker: { color: "red" },
+      marker: { color: "#F50400" },
       text: vKeys,
       hoverinfo: "text",
     },

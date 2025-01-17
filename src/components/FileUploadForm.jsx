@@ -49,7 +49,12 @@ const FileUploadForm = () => {
       </form>
       {chargingStatus && <Loader />}
       {uploadStatus && (
-        <ZipfScatterPlot xAxis={vRanking} yAxis={vValues} vKeys={vKeys} />
+        <ZipfScatterPlot
+          xAxis={vRanking}
+          yAxis={vValues}
+          vKeys={vKeys}
+          file_name={selectedFile.name}
+        />
       )}
     </div>
   );

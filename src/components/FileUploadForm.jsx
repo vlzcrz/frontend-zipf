@@ -45,7 +45,9 @@ const FileUploadForm = () => {
     <div className="file-upload-form">
       <form onSubmit={handleSubmit}>
         <input type="file" onChange={handleFileChange} />
-        <button type="submit">Plot!</button>
+        <button className="btn btn-outline btn-primary w-16" type="submit">
+          Plot
+        </button>{" "}
       </form>
       {chargingStatus && <Loader />}
       {uploadStatus && (

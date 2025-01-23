@@ -3,16 +3,38 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  height: 100%;
 }
 
 .read-the-docs {
   color: #888;
-  position:relative;
-  bottom: 5%;
-  left: 0;
-  right: 0;
+
 }
 
 .desc {
   color: #888;
+  padding-bottom: 16px;
 }
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Flexbox container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+}
+
+/* Main content grows to fill space */
+main {
+  flex: 1;
+  padding: 20px;
+  justify-content: center;
+  align-content: center;
+}
+
+

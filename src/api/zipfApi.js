@@ -6,7 +6,7 @@ export const uploadPost = async (file) => {
   formData.append("file", file);
 
   try {
-    const response = await axios.post("https://microservice-zipf.onrender.com/upload", formData, {
+    const response = await axios.post("https://microservice-zipf.onrender.com/zipf-plot", formData, {
       headers: {
         "Content-Type": "multipart/form-data",
       },
@@ -17,7 +17,10 @@ export const uploadPost = async (file) => {
       return {
         vector_keys: response.data.vector_keys,
         vector_ranking: response.data.vector_ranking,
-        vector_values: response.data.vector_values
+        vector_values: response.data.vector_values,
+        words_trend_n50: response.data.words_trend_n50,
+        total_words: response.data.total_words,
+        total_different_words: response.data.total_different_words
       };
     } else {
       return { success: false, message: "Error processing file. Please select a txt extension file)" };

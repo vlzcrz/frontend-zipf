@@ -7,9 +7,10 @@ function App() {
       <main>
         <h1 className="title">Plot Zipf's Law</h1>
         <h4 className="desc">
-          File (<span className="text">txt</span>
+          File (<span className="text-primary font-extrabold">txt</span>
           {" or "}
-          <span className="pdf">pdf</span> extension) as a Corpus
+          <span className="text-error font-extrabold">pdf</span> extension) as a
+          Corpus
         </h4>
         <div>
           <FileUploadForm />

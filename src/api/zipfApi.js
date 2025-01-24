@@ -19,8 +19,9 @@ export const uploadPost = async (file) => {
         vector_ranking: response.data.vector_ranking,
         vector_values: response.data.vector_values,
         words_trend_n50: response.data.words_trend_n50,
+        values_trend_n50: response.data.values_trend_n50,
         total_words: response.data.total_words,
-        total_different_words: response.data.total_different_words
+        total_different_words: response.data.total_different_words,
       };
     } else {
       return { success: false, message: "Error processing file. Please select a txt extension file)" };

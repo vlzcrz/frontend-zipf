@@ -8,7 +8,8 @@
 
 .read-the-docs {
   color: #888;
-
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .desc {
@@ -22,19 +23,32 @@ body, html {
   height: 100%;
 }
 
-/* Flexbox container */
 .app-container {
   display: flex;
   flex-direction: column;
   min-height: 95vh;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
-/* Main content grows to fill space */
 main {
   flex: 1;
   padding: 20px;
   justify-content: center;
   align-content: center;
 }
+
+.hidden {
+  display: none;
+}
+
+.plot {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;    /* Centra verticalmente */
+  height: 78vh; 
+}
+
 
 

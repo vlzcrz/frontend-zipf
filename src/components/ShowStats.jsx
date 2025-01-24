@@ -34,9 +34,7 @@ const ShowStats = ({
         </div>
         <div className="stat-title text-slate-200">Total words in file</div>
         <div className="stat-value text-primary">{formatted_total_words}</div>
-        <div className="stat-desc">
-          Lower cased and adjusted ASCII eng words
-        </div>
+        <div className="stat-desc">Lowercased and adjusted ASCII eng words</div>
       </div>
 
       <div className="stat">
@@ -74,8 +72,8 @@ const ShowStats = ({
       </div>
 
       <button
-        className="bg-transparent"
-        onClick={() => document.getElementById("my_modal_3").showModal()}
+        className="bg-transparent hover:bg-gray-500"
+        onClick={() => document.getElementById("modal_rank_list").showModal()}
       >
         <div className="stat">
           <div className="stat-figure">
@@ -100,7 +98,7 @@ const ShowStats = ({
           <div className="stat-desc">Most frequent words</div>
         </div>
       </button>
-      <dialog id="my_modal_3" className="modal">
+      <dialog id="modal_rank_list" className="modal">
         <div className="modal-box bg-white">
           <form method="dialog">
             {/* if there is a button in form, it will close the modal */}

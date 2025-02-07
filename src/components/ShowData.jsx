@@ -1,7 +1,7 @@
 const ShowData = ({ words_trend_n50, qty_trend_n50 }) => {
   const tableRows = (words_trend_n50, qty_trend_n50) => {
     return words_trend_n50.map((word, index) => (
-      <tr className="hover:bg-slate-50">
+      <tr key={index} className="hover:bg-slate-50">
         <td className="p-2 px-8 border-b border-slate-200">
           <p className="block text-sm text-slate-800">{index + 1}</p>
         </td>

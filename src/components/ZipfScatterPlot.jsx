@@ -1,7 +1,14 @@
 import React from "react";
 import Plot from "react-plotly.js";
 
-const ZipfScatterPlot = ({ xAxis, yAxis, vKeys, file_name }) => {
+const ZipfScatterPlot = ({
+  xAxis,
+  yAxis,
+  vKeys,
+  file_name,
+  xAxisLR,
+  yAxisLR,
+}) => {
   const dataParam = [
     {
       x: xAxis,
@@ -11,6 +18,13 @@ const ZipfScatterPlot = ({ xAxis, yAxis, vKeys, file_name }) => {
       marker: { color: "#F50400" },
       text: vKeys,
       hoverinfo: "text",
+    },
+    {
+      x: xAxisLR,
+      y: yAxisLR,
+      type: "scatter",
+      mode: "lines",
+      marker: { color: "#3943B7" },
     },
   ];
 
@@ -27,7 +41,6 @@ const ZipfScatterPlot = ({ xAxis, yAxis, vKeys, file_name }) => {
     xaxis: {
       title: {
         text: "Log(Ranking)",
-
         font: {
           family: "Courier New, monospace",
           size: 18,

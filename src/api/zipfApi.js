@@ -22,6 +22,8 @@ export const uploadPost = async (file) => {
         values_trend_n50: response.data.values_trend_n50,
         total_words: response.data.total_words,
         total_different_words: response.data.total_different_words,
+        linear_regression_parameters: response.data.linear_regression_parameters,
+
       };
     } else {
       return { success: false, message: "Error processing file. Please select a txt extension file)" };
